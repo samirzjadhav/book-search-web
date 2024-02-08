@@ -20,3 +20,39 @@ body {
 html {
   @apply text-[10px];
 }
+
+/* resets */
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: var(--black-color);
+}
+button {
+  @apply outline-[0] border-none bg-transparent cursor-pointer;
+  font-family: inherit;
+}
+img {
+  width: 100%;
+  display: block;
+}
+input {
+  @apply border-none text-[26px];
+  outline: 0;
+  font-family: inherit;
+}
+
+.resize-animation-stopper * {
+  animation: none !important;
+  transition: none !important;
+}
+
+.container {
+  @apply max-w-[1200px] my-[0px] mx-auto py-[0px] px-[32px];
+}
+
+/* section title */
+.section-title h2 {
+  @apply font-semibold uppercase px-[0] pt-[18px] pb-[24px];
+}
