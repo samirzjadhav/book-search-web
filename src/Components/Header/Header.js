@@ -10,9 +10,11 @@ const Header = () => {
       <header className="header">
         <Navabr />
         <div className="header-content flex justify-center items-center text-center text-white">
-          <h2 className="header-title">Find your book of choice</h2>
+          <h2 className="header-title capitalize font-bold">
+            Find your book of choice
+          </h2>
           <br />
-          <p>
+          <p className="text-[28px] font-light">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis
             molestiae nam sapiente quidem nisi, dignissimos magni, voluptates
             laborum consequuntur accusantium eos culpa expedita doloremque
