@@ -1,13 +1,15 @@
 import React from "react";
 import Navabr from "../Navbar/Navbar.js";
-// import SearchForm from "../SearchForm/SearchForm.js";
+import SearchForm from "../SearchForm/SearchForm.js";
+
+import "./Header.css";
 
 const Header = () => {
   return (
     <div className="Holder">
       <header className="header">
         <Navabr />
-        <div className="header-content">
+        <div className="header-content flex justify-center items-center text-center text-white">
           <h2 className="header-title">Find your book of choice</h2>
           <br />
           <p>
@@ -16,7 +18,8 @@ const Header = () => {
             laborum consequuntur accusantium eos culpa expedita doloremque
             minima. Quibusdam quam dolorum odit. Iusto tempore velit saepe
             inventore quidem.
-           </p>
+          </p>
+          <SearchForm />
         </div>
       </header>
     </div>

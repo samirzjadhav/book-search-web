@@ -1,0 +1,13 @@
+.header-content {
+  @apply min-h-[75vh] flex-col;
+  background: linear-gradient(rgba(141, 39, 174, 0.3), rgba(141, 39, 174, 0.5)),
+    url("../../Images/library-img.jpg") center/cover no-repeat;
+}
+
+.header-title {
+  @apply text-[68px];
+}
+
+.header-text {
+  @apply mt-[-28px] mb-[-44px] opacity-[0.8] max-w-[770px];
+}
