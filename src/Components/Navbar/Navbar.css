@@ -1,0 +1,67 @@
+.navbar {
+  @apply py-[28px] px-[0px];
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.navbar-brand {
+  @apply w-[90px];
+}
+
+.navbar-brand span {
+  @apply ml-[32px];
+}
+
+.brand-and-toggler {
+  @apply w-full;
+}
+
+.navbar-toggler-btn {
+  transition: var(--transition);
+  z-index: 11;
+}
+
+.navbar-collapse {
+  @apply fixed right-0 top-0 z-10 bg-[var(--black-color)] h-full w-[280px] flex pt-[10rem] pr-[3rem] pl-[3rem] pb-[0px];
+  transform: translatex(100%);
+  transition: var(--transition);
+}
+
+.show-navbar-collapse {
+  transform: translateX(0);
+}
+
+.nav-item {
+  @apply mb-[1.4rem];
+}
+
+.nav-link {
+  transition: var(--transition);
+}
+
+.nav-link:hover {
+  color: var(--purple-color);
+}
+
+@media screen and (min-width: 992px) {
+  .navbar-collapse {
+    @apply relative h-auto p-0 w-full bg-transparent justify-end;
+    transform: translateX(0);
+  }
+
+  .navbar-toggler-btn {
+    display: none;
+  }
+
+  .nav-item {
+    @apply mb-[0px] ml-[44px];
+  }
+
+  .nav-link {
+    @apply text-[var(--black-color)] text-[26px] font-medium opacity-[0.8];
+  }
+
+  .navbar-nav {
+    display: flex;
+  }
+}
