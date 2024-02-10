@@ -15,11 +15,9 @@ const Header = () => {
           </h2>
           <br />
           <p className="text-[28px] font-light">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis
-            molestiae nam sapiente quidem nisi, dignissimos magni, voluptates
-            laborum consequuntur accusantium eos culpa expedita doloremque
-            minima. Quibusdam quam dolorum odit. Iusto tempore velit saepe
-            inventore quidem.
+            BookSearch: Your instant portal to endless books. Explore genres,
+            get personalized recommendations, and find your next favorite read
+            effortlessly. Your pocket-sized library for a world of stories.
           </p>
           <SearchForm />
         </div>
