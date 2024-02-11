@@ -1,0 +1,18 @@
+@layer {
+  .search-form {
+    @apply w-full;
+    max-width: 680px;
+  }
+
+  .search-form-elem {
+    @apply py-[22px] px-[38px] rounded-full;
+  }
+
+  .search-form-elem .form-control {
+    @apply text-[32px] p-[10px];
+  }
+
+  .search-form-elem .form-control::placeholder {
+    opacity: 0.9;
+  }
+}
