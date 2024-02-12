@@ -12,7 +12,7 @@ const SearchForm = () => {
             <div className="search-form-elem flex items-center justify-between bg-white">
               <input
                 type="text"
-                className="form-control"
+                className="form-control text-black outline-none"
                 placeholder="The Lost World..."
               />
               <button className="flex item-center justify-center">
