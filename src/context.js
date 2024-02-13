@@ -1,6 +1,6 @@
 import React, { useState, useContext, useEffect } from "react";
 import { useCallback } from "react";
-const URL = "http://openlibrary.org/search.json?title=";
+const URL = "https://openlibrary.org/search.json?title=";
 const AppContext = React.createContext();
 
 const AppProvider = ({ children }) => {
@@ -15,6 +15,7 @@ const AppProvider = ({ children }) => {
       const response = await fetch(`${URL}${searchTerm}`);
       const data = await response.json();
       const { docs } = data;
+      console.log(docs);
 
       if (docs) {
         const newBooks = docs.slice(0, 20).map((bookSingle) => {
